@@ -25,6 +25,8 @@ const SongDetails = () => {
   const { data: songData, isFetching: isFetchingSongDetails } =
     useGetSongDetailsQuery({ songid });
 
+  console.log(songData);
+
   const {
     data,
     isFetching: isFetchingRelatedSongs,
