@@ -12,7 +12,6 @@ const AroundYou = () => {
   const { activeSong, isPlaying } = useSelector((state) => state.player);
 
   const { data, isFetching, error } = useGetSongsByCountryQuery(country);
-  console.log(data);
 
   if (isFetching && loading) {
     return <Loader title="Loading songs around you..." />;
